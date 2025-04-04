@@ -1,0 +1,532 @@
+:root {
+    --color-background: #fbfbf6;
+    --color-text: #000000;
+    --color-accent: #c8ae8b;
+    --color-title: #000000;
+    --color-highlight: #FFFFFF;
+    --color-border: #c8ae8b;
+  
+    --font-base-size: 16px;
+    --font-title-size: 18px;
+    --font-subtitle-size: 16px;
+    
+    --content-width: 1100px;
+    --content-padding: 5%;
+    --title-spacing: 10px;
+    --subtitle-spacing: 30px;
+    --section-spacing: 5%;
+  }
+  
+  /* 繝吶�繧ｹ繧ｹ繧ｿ繧､繝ｫ */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    font-family: "Noto Serif JP", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--font-base-size);
+    line-height: 1.8;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    overflow-x: hidden;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  a:focus {
+    outline: 2px solid #000;
+    outline-offset: 2px;
+  }
+  
+  [aria-hidden="true"] {
+  }
+  
+  /* 繝ｬ繧､繧｢繧ｦ繝� */
+  .product {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    overflow-x: hidden;
+    padding-top: 5vw;
+  }
+  
+  /* 繝倥ャ繝繝ｼ陬�｣ｾ */
+  .product__header-decoration,
+  .product__footer-decoration {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .product__decoration-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  
+  /* 繝｡繧､繝ｳ繝倥ャ繝繝ｼ */
+  .product__header {
+    margin-bottom: var(--title-spacing);
+    padding: 0 var(--content-padding);
+  }
+  
+  .product__header--fv{
+    margin-bottom: 5%;
+  }
+  
+  .product__header-text {
+    margin-bottom: 10px;
+    font-weight: normal;
+  }
+  
+  .product__title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .product__title {
+    border: 1px solid var(--color-title);
+    padding: 8px 15px;
+    font-size: var(--font-title-size);
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  .product__title-suffix {
+    margin-left: 10px;
+  }
+  
+  /* 繧ｵ繝悶�繝�ム繝ｼ */
+  .product__subheader {
+    margin-bottom: var(--subtitle-spacing);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-right: 5%;
+  }
+  
+  .product__subheader h2{
+    width: 73%;
+    margin-right: 2%;
+  }
+  
+  .croud2 {
+    position: absolute;
+    top: -10%;
+    right: 0;
+    width: 15%;
+  }
+  
+  .wagara {
+    position: absolute;
+    bottom: -83%;
+    right: 0;
+    width: 17%;
+  }
+  
+  .wagara2_r {
+    position: absolute;
+    bottom: -122%;
+    right: 0;
+    width: 31%;
+  }
+  
+  .wagara2_l {
+    position: absolute;
+    bottom: -312%;
+    left: 0;
+    width: 35%;
+  }
+  
+  .product__subheader-cloud-left {
+    width: 30px;
+    height: 30px;
+    background-image: url('images/croud.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .product__subheader-text {
+    background-color: var(--color-accent);
+    color: var(--color-highlight);
+    font-size: var(--font-subtitle-size);
+    font-weight: bold;
+    margin-left: 40px;
+  }
+  
+  /* 荳ｸ蝙狗筏縺苓ｾｼ縺ｿ繝懊ち繝ｳ縺ｮ繧ｹ繧ｿ繧､繝ｫ */
+  .product__order-button {
+    display: inline-block;
+    width: 15vw;
+    height: 15vw;
+    background-color: #d8bc99;
+    border-radius: 50%;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    font-weight: 900;
+    position: relative;
+    border: 1px solid #000; /* 譫�邱� */
+    box-shadow: 0 0 20px rgba(145, 115, 80, 0.8);
+    transition: all 0.3s ease; /* 繝帙ヰ繝ｼ蜉ｹ譫懊ｒ繧ｹ繝�繝ｼ繧ｺ縺ｫ */
+  }
+  
+  /* 繝帙ヰ繝ｼ譎ゅ�繧ｨ繝輔ぉ繧ｯ繝� */
+  .product__order-button:hover {
+    transform: translateY(-3px);
+    background-color:#000;
+    color: var(--color-accent);
+  }
+  
+  /* 繝懊ち繝ｳ蜀��繧ｳ繝ｳ繝�Φ繝�ｒ荳ｭ螟ｮ驟咲ｽｮ */
+  .product__order-button-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+  
+  /* 繝�く繧ｹ繝医�繧ｹ繧ｿ繧､繝ｫ */
+  .product__order-button-content span {
+    font-size:min(1.82vw,28px);
+    line-height: 1.4;
+  }
+  
+  /* 蝠�刀逕ｻ蜒� */
+  .product__image-wrapper {
+    margin-bottom: var(--section-spacing);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    position: relative;
+    padding: 0 var(--content-padding);
+  }
+  
+  .product__image {
+    width: 100%;
+  }
+  
+  /* 蝠�刀隱ｬ譏取枚 */
+  .product__description,
+  .product__testimonial {
+    margin-bottom: var(--section-spacing);
+    padding: 0 var(--content-padding);
+  }
+  
+  .product__text {
+    text-indent: 1em;
+  }
+  
+  .description__block{
+    margin-bottom: 1em;
+  }
+  
+  .product__text:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* 蠑ｷ隱ｿ繧ｻ繧ｯ繧ｷ繝ｧ繝ｳ */
+  .product__highlight {
+    margin-bottom: var(--subtitle-spacing);
+    position: relative;
+  }
+  
+  .product__highlight-decoration-top {
+    width: 20px;
+    height: 20px;
+    background-image: url('images/croud2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 15px;
+    top: 0;
+  }
+  
+  .product__highlight-decoration-bottom {
+    width: 20px;
+    height: 20px;
+    background-image: url('images/croud.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+  }
+  
+  .product__highlight-text {
+    color: var(--color-highlight);
+    font-size: var(--font-subtitle-size);
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .sign__image{
+    display: flex;
+        justify-content: flex-end;
+  }
+  
+  .sign__image img{
+    width: 15%;
+  }
+  
+  .octagon-button-container {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    margin: 30px 0;
+  }
+  
+  .octagon-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: #d2bc94;
+    color: #000;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: normal;
+    margin: 30px 0;
+    /* 逍台ｼｼ隕∫ｴ�縺ｧ蛻�ｊ谺�縺阪ｒ菴懊ｋ */
+    clip-path: polygon(
+        10px 0,
+        calc(100% - 10px) 0,
+        100% 10px,
+        100% calc(100% - 10px),
+        calc(100% - 10px) 100%,
+        10px 100%,
+        0 calc(100% - 10px),
+        0 10px
+    );
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 2;
+  }
+  
+  .octagon-button:hover {
+      transform: translateY(-3px);
+      background-color:#000;
+      color: var(--color-accent);
+  }
+  
+  .octagon-button::before {
+    content: '';
+              position: absolute;
+              top: 3px;
+              left: 3px;
+              right: 3px;
+              bottom: 3px;
+    clip-path: polygon(
+        10px 0,
+        calc(100% - 10px) 0,
+        100% 10px,
+        100% calc(100% - 10px),
+        calc(100% - 10px) 100%,
+        10px 100%,
+        0 calc(100% - 10px),
+        0 10px
+    );
+    pointer-events: none;
+  }
+  
+  .octagon-border {
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    clip-path: polygon(
+        10px 0,
+        calc(100% - 10px) 0,
+        100% 10px,
+        100% calc(100% - 10px),
+        calc(100% - 10px) 100%,
+        10px 100%,
+        0 calc(100% - 10px),
+        0 10px
+    );
+    background-color: #000;
+    z-index: 1;
+  }
+  
+  /* 隱ｬ譏取枚縺ｮ繧ｹ繧ｿ繧､繝ｫ */
+  .description {
+    margin-top: 40px;
+    line-height: 1.8;
+    margin-bottom: 80px;
+  }
+  
+  .subscription{
+    padding: 0 var(--content-padding);
+  }
+  
+  /* 繝｡繝�ぅ繧｢繧ｯ繧ｨ繝ｪ - 768px莉･荳九�蝣ｴ蜷� */
+  @media screen and (max-width: 768px) {
+    :root {
+      --font-base-size: 16px;
+      --font-title-size: 20px;
+      --font-subtitle-size: 18px;
+    }
+    
+    
+    .product__title-wrapper {
+      flex-direction: column;
+    }
+    
+    .product__title-suffix {
+      margin-left: 0;
+      margin-top: 5px;
+    }
+    
+    .product__subheader {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .product__subheader-text {
+      margin-left: 0;
+      text-align: left;
+      width: 70%;
+    }
+    
+    .product__subheader-cloud-left {
+      top: 20px;
+      transform: none;
+    }
+  
+    .product__order-button{
+      width: 23vw;
+      height: 23vw;
+    }
+  
+    .product__order-button-content{
+      line-height: 1;
+    }
+  
+    .product__order-button span{
+      font-size:max(2.34vw,12px);
+    }
+  
+    .sign__image img{
+      width: 25%;
+    }
+    
+  }
+
+
+
+  /* 横並び2列 スタイル設定
+  ================================ */
+
+  .flex2-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .flex2-box .flex2-item {
+    width: 48%;
+  }
+
+  .flex2-box .flex2-item img {
+    width: 100%;
+  }
+
+  /* テキスト一部中央寄せ
+  ========================== */
+
+  .center-text {
+    text-align: center;
+  }
+
+
+  /* 画像リスト横並び
+  ============================= */
+
+  .saifu-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0 auto;
+  }
+
+  .saifu-list li {
+    width: 48%;
+    max-width: 100%;
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .safiu-list li img {
+    width: 100%;
+  }
+
+    /* 背景黄色のコンテンツ
+  ========================= */
+
+  .khaki-contents {
+    background-color: #fff7d2;
+    padding: 30px 0;
+  }
+
+
+  /* 背景グレイのコンテンツ
+  ========================= */
+
+  .gray-contents {
+    background-color: #e7e7e7;
+    padding: 30px 0;
+  }
+
+  .img-inner-btn {
+
+  }
+
+    /* 背景グレイのコンテンツ 画像リスト追加設定
+  ========================= */
+
+  .img-list-title-cover {
+    position: relative;
+    top: 20px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+.img-list-title {
+  text-align: center;
+  display: inline-block;
+  background-color: #FFF;
+  border: 1px solid #000;
+  border-radius: 30px;
+  padding: 10px 25px;
+}
+
+.product__text.img-list-title {
+  text-indent: 0;
+}
+
