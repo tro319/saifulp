@@ -52,7 +52,7 @@
   
   /* 繝ｬ繧､繧｢繧ｦ繝� */
   .product {
-    max-width: var(--content-width);
+    max-width: 1000px;
     margin: 0 auto;
     overflow-x: hidden;
     padding-top: 5vw;
