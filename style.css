@@ -530,3 +530,148 @@
   text-indent: 0;
 }
 
+
+  /* 背景肌色のコンテンツ
+  ========================= */
+
+  .pink-contents {
+    background-color: #f5e9e9;
+    padding: 30px 0;
+  }
+
+    /* 最後のロゴの部分設定
+  ========================= */
+
+  .l-logo-flex {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .l-logo {
+    width: 48%;
+    text-align: center;
+  }
+
+  .l-logo img {
+    width: 100%;
+  }
+
+  .l-logo a {
+    background-color: #FFF;
+    color: #bc9d59;
+    border-radius: 20px;
+    padding: 5px 15px;
+    text-decoration: none;
+    transition: 0.8s;
+  }
+
+  .l-logo a:hover, 
+  .l-logo a:active {
+    color: #FFF;
+    background-color: #654d1b;
+  }
+
+  .l-logo2 {
+    width: 70%;
+    text-align: center;
+  }
+
+  .l-logo2 img {
+    width: 100%;
+  }
+
+  .l-logo2 a {
+    background-color: #FFF;
+    color: #bc9d59;
+    border-radius: 20px;
+    padding: 5px 15px;
+    text-decoration: none;
+    transition: 0.8s;
+    position: relative;
+    top: -20px;
+  }
+
+  .l-logo2 a:hover, 
+  .l-logo2 a:active {
+    color: #FFF;
+    background-color: #654d1b;
+  }
+
+
+
+    /* footer 最後財布の説明文章 設定
+  ========================== */
+
+  .product__footer {
+    background-color: #FFF;
+  }
+
+  .last-flex-texts {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+
+  .last-flex-texts .flex-text {
+    width: 48%;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  .last-footer-text {
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+
+    /* お申込みボタン上部配置調整
+  ================================= */
+
+  .top-move-btn {
+    text-align: right;
+    position: relative;
+    top: 80px;
+  }
+
+  .sliver-btn {
+    background-color: #cccccc;
+    box-shadow: 0 0 20px #000;
+  }
+
+  .sliver-btn:hover,
+  .sliver-btn:active {
+    background-color: #000;
+    color: #cccccc;
+  }
+
+  .bronze-btn {
+    background-color: #c97c67;
+    box-shadow: 0 0 20px #6b2c1b;
+  }
+
+  .bronze-btn:hover,
+  .bronze-btn:active {
+    background-color: #000;
+    color: #c97c67;
+  }
+
+
+
+  @media screen and (max-width: 768px) {
+    .l-logo a {
+      font-size: 0.7rem;
+    }
+
+    .l-logo2 a {
+      font-size: 0.7rem;
+    }
+  }
+
+
+
