@@ -716,4 +716,26 @@
   }
 
 
+  /* フェードアップ設定
+  =========================== */
+
+  .fadeUp {
+    opacity: 0;
+    transition: all 1s;
+    margin-top: -25px;
+  }
+
+  .fadeUp.sc-animate {
+    opacity: 1;
+    margin-top: 0;
+  }
+
+  /* 全体調整
+  ====================== */
+
+  .product {
+    padding-top: 0; 
+  }
+
+
 
