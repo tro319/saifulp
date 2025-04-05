@@ -15,7 +15,7 @@
 
       <div class="khaki-contents">
 
-        <div class="fadeUp">
+        <div class="fadeDown">
       <!-- メインヘッダー -->
       <header class="product__header product__header--fv">
         <div class="product__title-wrapper">
@@ -99,7 +99,7 @@
 
         <!-- セクション2 -->
 
-        <div class="fadeUp">
+        <div class="fadeDown">
 
       <!-- ゴールドタイトル2 -->
         <div class="gold-title">
@@ -158,7 +158,7 @@
 
       <!-- セクション3 -->
 
-      <div class="fadeUp">
+      <div class="fadeDown">
 
               <!-- ゴールドタイトル3 -->
               <div class="gold-title">
@@ -274,7 +274,7 @@
 
             <!-- セクション4 -->
 
-            <div class="fadeUp">
+            <div class="fadeDown">
 
 
 
@@ -350,7 +350,7 @@
 
               <!-- セクション5 -->
 
-              <div class="fadeUp">
+              <div class="fadeDown">
 
 
               <div class="product__header">
@@ -502,7 +502,7 @@
 
                 </div>
 
-                <div class="fadeUp">
+                <div class="fadeDown">
 
                   <!-- セクション6 -->
 
@@ -519,7 +519,7 @@
 
                 </div>
 
-                  <div class="fadeUp">
+                  <div class="fadeDown">
 
 
               <!-- ゴールドタイトル6 -->
@@ -638,7 +638,7 @@
 
                                   <!-- セクション7 -->
                 
-                                  <div class="fadeUp">
+                                  <div class="fadeDown">
                 
                               <!-- ゴールドタイトル7 -->
                               <div class="gold-title">
@@ -727,7 +727,7 @@
 
                                   <!-- セクション8 -->
 
-                                  <div class="fadeUp">
+                                  <div class="fadeDown">
                 
                 
                               <!-- ゴールドタイトル -->
@@ -826,7 +826,7 @@
 
                               <!-- セクション9 -->
 
-                              <div class="fadeUp">
+                              <div class="fadeDown">
                 
                 
                               <!-- ゴールドタイトル -->
@@ -917,7 +917,7 @@
 
                             <!-- セクション10 -->
 
-                            <div class="fadeUp">
+                            <div class="fadeDown">
                 
                 
                               <!-- ゴールドタイトル -->
@@ -1017,7 +1017,7 @@
 
                               <!-- セクション11 -->
 
-                              <div class="fadeUp">
+                              <div class="fadeDown">
                 
                 
                               <!-- ゴールドタイトル -->
@@ -1080,7 +1080,7 @@
 
                   <!-- セクション12 -->
 
-                  <div class="fadeUp">
+                  <div class="fadeDown">
 
                   <div class="product__header">
                     <div class="product__title-wrapper">
@@ -1149,7 +1149,7 @@
 
                                  <!-- セクション13 -->
 
-                                 <div class="fadeUp">
+                                 <div class="fadeDown">
 
                               <!-- セクション 画像リスト -->
 
@@ -1223,7 +1223,7 @@
 
                                  <!-- セクション14 -->
 
-                                 <div class="fadeUp">
+                                 <div class="fadeDown">
 
                               <!-- セクション 画像リスト -->
 
@@ -1290,7 +1290,7 @@
 
                               <!-- セクション15 -->
 
-                              <div class="fadeUp">
+                              <div class="fadeDown">
 
                               <!-- セクション 画像リスト -->
 
@@ -1355,7 +1355,7 @@
 
                               <!-- セクション16 -->
 
-                              <div class="fadeUp">
+                              <div class="fadeDown">
 
                               <!-- セクション 画像リスト -->
 
@@ -1455,7 +1455,7 @@
 
                 <!-- セクション17 -->
 
-                <div class="fadeUp">
+                <div class="fadeDown">
 
                 <div class="product__header">
                   <div class="product__title-wrapper">
@@ -1520,12 +1520,17 @@
                  </div>
               </section>
 
+              </div>
+
+              <div class="fadeDown">
+
                     <!-- ゴールドタイトル -->
         <div class="gold-title">
           <img src="images/section17/title3.webp" alt="開運クロコ ® 専用 
           収納桐箱 
           ">
         </div>
+
 
 
                       <!-- セクション 文章 -->
@@ -1569,7 +1574,7 @@
 
                       <!-- セクション18 -->
 
-                      <div class="fadeUp">
+                      <div class="fadeDown">
 
                       <div class="product__header">
                         <div class="product__title-wrapper">
@@ -1618,6 +1623,10 @@
                           </p>
                          </div>
                       </section>
+
+                    </div>
+
+                    <div class="fadeDown">
                       
                                               <!-- ゴールドタイトル -->
                       
@@ -1681,6 +1690,10 @@
 
               </div>
 
+            </div>
+
+            <div class="fadeDown">
+
           <!-- ゴールドタイトル -->                                    
                       
           <div class="gold-title">
@@ -1738,6 +1751,10 @@
       </p>
      </div>
   </section>
+
+</div>
+
+<div class="fadeDown">
 
             <!-- ゴールドタイトル -->                                    
                       
@@ -1839,6 +1856,10 @@
                                              </div>
                    
                                          </section>
+
+                                        </div>
+
+                                        <div class="fadeDown">
 
                                                                                                                                                           <!-- 商品画像 -->
 
@@ -1965,48 +1986,10 @@
         </div>
       </footer>
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-      <script>
 
-        "use strict";
+      <!-- javascript 読み込み -->
 
-
-
-function scrollTop() {
-    var target = jQuery(".fadeUp");
-    var scAnime = "sc-animate";
-
-    var scPos = jQuery(window).scrollTop();
-    var winHei = jQuery(window).height();
-
-    target.each(function () {
-
-        var targetOffset = jQuery(this).offset().top;
-
-        // 対象要素があれば、フェードアップ表示。
-
-        if (targetOffset < scPos + winHei) {
-            jQuery(this).addClass(scAnime);
-        } else if (scPos > targetOffset - winHei + 130) {
-
-          // スクロール後にフェードアップ表示
-
-            jQuery(this).addClass(scAnime);
-        }
-    });
-}
-
-jQuery(document).ready(function() {
-    scrollTop();
-
-    jQuery(window).scroll(function() {
-      scrollTop();
-    });
-});
-
-
-
-      </script>
+      <script src="script.js"></script>
     
   </body>
 </html>

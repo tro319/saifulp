@@ -767,13 +767,13 @@
   /* フェードアップ設定
   =========================== */
 
-  .fadeUp {
+  .fadeDown {
     opacity: 0;
     transition: all 1s;
     margin-top: -25px;
   }
 
-  .fadeUp.sc-animate {
+  .fadeDown.sc-animate {
     opacity: 1;
     margin-top: 0;
   }
