@@ -683,20 +683,34 @@
     color: #c97c67;
   }
 
-  @media screen and (max-width: 1920px) {
+  @media screen and (min-width: 1180px) and (max-width: 1920px) {
     .re-order-btn {
-      width: 12vw;
-      height: 12vw;
+      width: 10vw;
+      height: 10vw;
+    }
+
+    .re-order-btn span {
+      font-size: 1.1rem;
+    }
+  }
+  @media screen and (min-width: 1080px) and (max-width: 1180px) {
+    .re-order-btn {
+      width: 13vw;
+      height: 13vw;
+    }
+
+    .re-order-btn span {
+      font-size: min(1.82vw,28px);
     }
   }
 
 
-  @media screen and (max-width: 1900px) {
+  @media screen and (min-width: 768px) and (max-width: 1080px) {
     .re-order-btn {
-      width: 15vw;
-      height: 15vw;
+      width: 14vw;
+      height: 14vw;
     }
-  
+
     .re-order-btn span {
       font-size: min(1.82vw,28px);
     }
