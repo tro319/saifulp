@@ -683,8 +683,15 @@
     color: #c97c67;
   }
 
+  @media screen and (max-width: 1920px) {
+    .re-order-btn {
+      width: 13vw;
+      height: 13vw;
+    }
+  }
 
-  @media screen and (max-width: 1960px) {
+
+  @media screen and (max-width: 1900px) {
     .re-order-btn {
       width: 15vw;
       height: 15vw;
