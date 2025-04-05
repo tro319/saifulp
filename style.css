@@ -517,6 +517,13 @@
     padding: 0;
   }
 
+  .back-change3 {
+    height: 100px;
+    background: linear-gradient(to bottom,#f5e9e9, #FFF);
+    margin: 0;
+    padding: 0;
+  }
+
 
   /* 背景グレイのコンテンツ
   ========================= */
