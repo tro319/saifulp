@@ -1,5 +1,6 @@
 
-jQuery(window).on("load scroll", function() {
+
+function scrollTop() {
     var target = jQuery(".fadeUp");
     var scAnime = "sc-animate";
 
@@ -22,4 +23,12 @@ jQuery(window).on("load scroll", function() {
             jQuery(this).addClass(scAnime);
         }
     });
+}
+
+jQuery(document).ready(function() {
+    scrollTop();
+});
+
+jQuery(window).scroll(function() {
+    scrollTop();
 });
