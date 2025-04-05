@@ -495,8 +495,26 @@
   ========================= */
 
   .khaki-contents {
-    background-color: #fff7d2;
+    background: #fff7d2;
     padding: 30px 0;
+  }
+
+
+    /* 背景チェンジ、グラデーション
+  ========================= */
+
+  .back-change1 {
+    height: 100px;
+    background: linear-gradient(to bottom,#fff7d2, #e7e7e7);
+    margin: 0;
+    padding: 0;
+  }
+
+  .back-change2 {
+    height: 100px;
+    background: linear-gradient(to bottom,#e7e7e7, #f5e9e9);
+    margin: 0;
+    padding: 0;
   }
 
 
@@ -508,9 +526,6 @@
     padding: 30px 0;
   }
 
-  .img-inner-btn {
-
-  }
 
     /* 背景グレイのコンテンツ 画像リスト追加設定
   ========================= */
