@@ -595,16 +595,19 @@
     padding: 5px 15px;
     text-decoration: none;
     transition: 0.8s;
+    border: 3px solid #bc9d59;
   }
 
   .l-logo a:hover, 
   .l-logo a:active {
     color: #FFF;
     background-color: #654d1b;
+    border: 3px solid #ddd;
   }
 
   .l-logo2 {
     width: 70%;
+    margin: 0 auto;
     text-align: center;
   }
 
@@ -614,19 +617,21 @@
 
   .l-logo2 a {
     background-color: #FFF;
-    color: #bc9d59;
+    color: #808080;
     border-radius: 20px;
     padding: 5px 15px;
     text-decoration: none;
     transition: 0.8s;
     position: relative;
     top: -20px;
+    border: 3px solid #a4a4a4;
   }
 
   .l-logo2 a:hover, 
   .l-logo2 a:active {
     color: #FFF;
-    background-color: #654d1b;
+    background-color: #8e8e8e;
+    border: 3px solid #ddd;
   }
 
 
@@ -710,6 +715,13 @@
     color: #c97c67;
   }
 
+  /* 問いかけ部分内部余白調整
+=============================== */
+
+.speak-back-white {
+  padding: 35px;
+}
+
   @media screen and (min-width: 1180px) and (max-width: 1920px) {
     .re-order-btn {
       width: 10vw;
@@ -718,6 +730,10 @@
 
     .re-order-btn span {
       font-size: 1.1rem;
+    }
+
+    .speak-back-white {
+      padding: 30px;
     }
   }
   @media screen and (min-width: 1080px) and (max-width: 1180px) {
@@ -728,6 +744,10 @@
 
     .re-order-btn span {
       font-size: min(1.82vw,28px);
+    }
+
+    .speak-back-white {
+      padding: 25px;
     }
   }
 
@@ -740,6 +760,10 @@
 
     .re-order-btn span {
       font-size: min(1.82vw,28px);
+    }
+
+    .speak-back-white {
+      padding: 20px;
     }
   }
 
@@ -760,6 +784,10 @@
 
     .re-order-btn span {
       font-size: 0.8rem;
+    }
+
+    .speak-back-white {
+      padding: 15px;
     }
   }
 
@@ -788,6 +816,8 @@
 .gold-title {
   margin: 10px 0;
 }
+
+
 
 
 
