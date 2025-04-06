@@ -29,13 +29,24 @@ function scrollDown() {
 };
 
 
-// スクロールフェードイン処理関数呼び出し
 
 document.addEventListener("DOMContentLoaded", function() {
+
+
+    // 画像遅延読み込み
+
+      document.querySelectorAll("img").forEach(function(img) {
+        img.setAttribute("loading", "lazy");
+      });
+
+// スクロールフェードイン処理関数呼び出し
 
     scrollDown();
 
     window.addEventListener("scroll", function() {
+        
+        // スクロールフェードイン処理関数呼び出し
+
         scrollDown();
     });
 
