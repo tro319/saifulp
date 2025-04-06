@@ -524,6 +524,13 @@
     padding: 0;
   }
 
+  .back-change4 {
+    height: 100px;
+    background: linear-gradient(to bottom, #FFF, #fbfbf6);
+    margin: 0;
+    padding: 0;
+  }
+
 
   /* 背景グレイのコンテンツ
   ========================= */
@@ -825,6 +832,13 @@
 .bm2 {
   margin-bottom: 30px;
 }
+
+.img-resize {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
 
 
 
