@@ -23,6 +23,11 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  .product__text {
+    margin: 0 auto;
+    text-indent: none;
+  }
   
   html, body {
     font-family: "Noto Serif JP", serif;
@@ -512,21 +517,7 @@
 
   .back-change2 {
     height: 100px;
-    background: linear-gradient(to bottom,#e7e7e7, #f5e9e9);
-    margin: 0;
-    padding: 0;
-  }
-
-  .back-change3 {
-    height: 100px;
-    background: linear-gradient(to bottom,#f5e9e9, #FFF);
-    margin: 0;
-    padding: 0;
-  }
-
-  .back-change4 {
-    height: 100px;
-    background: linear-gradient(to bottom, #FFF, #fbfbf6);
+    background: linear-gradient(to bottom,#e7e7e7, #FFF);
     margin: 0;
     padding: 0;
   }
