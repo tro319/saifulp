@@ -234,9 +234,9 @@
     padding: 0 var(--content-padding);
   }
   
-  .product__text {
-    text-indent: 1em;
-  }
+  /* .product__text {
+    text-indent: 1em
+  } */
   
   .description__block{
     margin-bottom: 1em;
@@ -828,6 +828,7 @@
   width: 100%;
   margin-bottom: 20px;
 }
+
 
 
 
